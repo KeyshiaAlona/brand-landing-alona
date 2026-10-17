@@ -655,7 +655,7 @@ img {
 .menu-btn .bar {
     width: 25px;
     height: 3px;
-    background-color: #ffffff;
+    background-color: #4b176c;
     border-radius: 2px;
     transition: all 0.3s ease;
 }
@@ -720,5 +720,53 @@ img {
         margin-right: auto;
         justify-content: flex-start;
         flex-shrink: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .brand-box {
+        margin-right: auto;
+    }
+
+    .menu-btn {
+        margin-left: auto;
+        margin-right: 0;
+        flex-shrink: 0;
+    }
+}
+
+/* Memperjelas warna menu hamburger di HP */
+@media (max-width: 768px) {
+    .nav-links {
+        background-color: #4B176C;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        padding: 20px 0;
+    }
+
+    .nav-links a {
+        color: #FFFFFF;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .nav-links a:hover {
+        color: #E8C8FF;
+    }
+
+    .nav-links .btn-nav {
+        background-color: #C77DDB;
+        color: #FFFFFF;
+        padding: 12px 24px;
+        border-radius: 25px;
+    }
+
+    .menu-btn .bar {
+        background-color: #4B176C;
     }
 }
